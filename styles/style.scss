@@ -1,0 +1,42 @@
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+#field {
+	font-size: 20px;
+	padding: 10px;
+	max-width: 200px;
+	margin: 0 auto;
+}
+#table {
+	margin-top: 20px;
+	background-color: #fff;
+	padding: 20px;
+	font-size: 16px;
+	tr {
+		max-width: 1600px;
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 10px;
+		border: 1px solid #000;
+	}
+	td {
+		margin-right: 5px;
+		&.used {
+			text-decoration: line-through;
+			color: red;
+			&::first-letter {
+				font-size: 14px;
+				text-transform: lowercase;
+				color: red;
+			}
+		}
+	}
+	td::first-letter {
+		font-size: 15px;
+		color: green;
+		text-transform: uppercase;
+	}
+	th {
+		margin-right: 10px;
+	}
+}
